@@ -46,7 +46,7 @@ func ContainerExec(containerName string, command []string) (error, string) {
         "environment": {},              
         "wait-for-websocket": false,    
 		"record-output": true,
-        "interactive": false
+        "interactive": true
     }
     `
 	commands, err := json.Marshal(&command)
